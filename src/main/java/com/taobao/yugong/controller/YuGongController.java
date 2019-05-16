@@ -551,7 +551,7 @@ public class YuGongController extends AbstractYuGongLifeCycle {
                     boolean ignoreSchema = false;
                     if (strs.length == 1) {
                         whiteTables = TableMetaGenerator.getTableMetasWithoutColumn(globalContext.getSourceDs(),
-                            null,
+                            "SSOPEN",
                             strs[0]);
                         ignoreSchema = true;
                     } else if (strs.length == 2) {
